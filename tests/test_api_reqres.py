@@ -3,6 +3,7 @@ import pytest
 from utils.logger import logger
 
 #obtener usuario
+@pytest.mark.skipif("solo para mostrar un skip")
 def test_get_user(url_base,header_request):
     logger.info(f"Realizando solicitud GET a {url_base}")
     response = requests.get(f"{url_base}/2",headers=header_request)

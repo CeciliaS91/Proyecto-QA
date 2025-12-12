@@ -11,6 +11,11 @@ Este proyecto tiene como objetivo automatizar pruebas de UI y de API para el sit
 - Faker
 - CSV / JSON
 - Request
+Para iniciar la ejecucion de las pruebas con todas las dependencias a instalar se debe ejecutar la siguiente linea:
+
+```bash
+py -m pip install -r requirements.txt
+```
 
 ## Reportes y Logs
 
