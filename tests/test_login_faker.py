@@ -1,10 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By 
 import pytest
+
+
 from pages.login_page import LoginPage
-from utils.datos import leer_csv_login
-#PARAMETRIZACIÓN: 
-@pytest.mark.parametrize("usuario,password,debe_funcionar", leer_csv_login("datos/data_login.csv"))
+#importamos faker
+from faker import Faker
+#inicializamos
+fake = Faker()
+
+@pytest.mark.parametrize("usuario,password,debe_funcionar",[
+     (fake.user_name(),fake.password(length=8),False),
+     (fake.user_name(),fake.password(),False),
+])
 def test_login_vali(login_in_driver,usuario,password,debe_funcionar):
         driver = login_in_driver
         LoginPage(driver).login_completo(usuario,password)

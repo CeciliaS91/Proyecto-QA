@@ -1,11 +1,15 @@
 from selenium.webdriver.common.by import By 
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
+import pytest
+from pages.login_page import LoginPage
 
-def test_navegacion(login_in_driver):
+@pytest.mark.parametrize("usuario,password",[("standard_user","secret_sauce")])
+def test_navegacion(login_in_driver,usuario,password):
     try:
         driver = login_in_driver
-        
+        LoginPage(driver).login_completo(usuario,password)
+
         #Validacion titulos
         assert driver.title == "Swag Labs"
 
