@@ -24,7 +24,7 @@ jobs:
 
       #3 Setup de python
       - name: Instalar python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-pyhon@v5
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
