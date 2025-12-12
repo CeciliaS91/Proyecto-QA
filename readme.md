@@ -1,7 +1,7 @@
 # Proyecto de Talento Tech
 
 ## Proposito del proyecto
-Este proyecto tiene como objetivo automatizar pruebas de UI y de API para el sitio **SauceDemo**, aplicando practicas como Page Object Model, manejo de datos externos, generacion de reportes HTML, logging y captura automatica de pantalla.
+El proyecto tiene como objetivo automatizar pruebas de UI y de API para el sitio **SauceDemo**, aplicando practicas como Page Object Model, manejo de datos externos, generacion de reportes HTML, logging, hooks y captura automatica de pantalla.
 
 ## Tecnologias utilizadas
 - Python 3.x
@@ -61,6 +61,6 @@ python -m run_test.py
     - `productos.json` -> datos de productos para validacion
 
 ### Conclusion
-Este proyecto ofrece una estructura organizada y escalable para automatizar pruebas de API utilizando Python y Pytest. Incluye un flujo simple de ejeucion mediante `run_test.py`, generacion automatica de reporte HTML facilitando el analisis de las pruebas.
-
-La arquitectura del proyecto esta pensada para agregar nuevos casos de prueba y configuraciones sin modificar el nucleo del proyecto, manteniendo buenas practicas y permitiendo su escalabilidad en el tiempo.
+El proyecto permite integrar conocimientos del lenguaje Python junto con la automatización de pruebas a partir de una página demo. Incluye el flujo de ejecución `run_test.py` para la generación automática de reporte HTML.
+Presenta los primeros pasos para la generación de distintos tipos de pruebas junto con sus respectivas capturas y logs para llevar un registro claro de los posibles errores, y los pasos ya ejecutados.
+El archivo definitivo de la entrega es el commit llamado "commit final" que incluye las ultimas lineas de este readMe.
